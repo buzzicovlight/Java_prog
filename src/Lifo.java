@@ -5,7 +5,7 @@ public class Lifo {
         String sourse;                                   // исходная строка
         Scanner scanner = new Scanner(System.in);        // сканер для чтения
         sourse = scanner.nextLine();                     // читаем строку
-        Stack  charStack =new Stack(sourse.length());
+        Stack  charStack = new Stack(sourse.length());
         for (int i = 0; i < sourse.length(); i++) {
             char c = sourse.charAt(i);
             switch (c){

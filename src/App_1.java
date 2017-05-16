@@ -1,4 +1,4 @@
-public class App {
+public class App_1 {
     public static void main (String[] args){
         int a = 0;
         Test myObject; // объявление переменной (тип + название)

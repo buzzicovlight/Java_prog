@@ -105,7 +105,7 @@ class Notebook{
     // пишем ручкой, т.е. стирать нельзя
     // метод ввода текста
     public void putText(int page, String newText){
-        if (!(page < 0 || page>= pageCount)){
+        if (!(page < 0 || page >= pageCount)){
             pages[page] = pages[page] + newText;
         }
     }
