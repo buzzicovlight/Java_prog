@@ -56,7 +56,6 @@ class Test5 {
     * public - Доступны извне
     * */
 }
-
 class Account2 {
     private int money;                  // никто.кроме объета не может обратиться
     private static final int COUNT = 2; // принадлежит только классу
@@ -138,7 +137,6 @@ class Notebook{
         System.out.println(n1);
         System.out.println(n1.getPage(0));
         System.out.println(n1.getPage(1));
-
     }
 }
 
