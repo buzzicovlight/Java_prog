@@ -1,13 +1,12 @@
 import java.util.Scanner;
-
 /*
- * Придумайте способ првращения числа, в массив из его разрядов. Пример 562-> [5 6 2]
+ * РџСЂРёРґСѓРјР°Р№С‚Рµ СЃРїРѕСЃРѕР± РїСЂРІСЂР°С‰РµРЅРёСЏ С‡РёСЃР»Р°, РІ РјР°СЃСЃРёРІ РёР· РµРіРѕ СЂР°Р·СЂСЏРґРѕРІ. РџСЂРёРјРµСЂ 562-> [5 6 2]
  */
 public class Work_3 {
     public static void  main (String[] args ){
         int [] resArr;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ввведите число для преобразования \n");
+        System.out.println("Р’РІРІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РґР»СЏ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ \n");
         String s = sc.nextLine();
         resArr = new int[s.length()];
         for ( int i = 0; i < s.length(); i++){

@@ -1,13 +1,13 @@
 import java.util.Scanner;
-/**
- * Напишите метод, заменяющий в строке все вхождения слова "Fuck" на "Censored"
+/*
+ * РќР°РїРёС€РёС‚Рµ РјРµС‚РѕРґ, Р·Р°РјРµРЅСЏСЋС‰РёР№ РІ СЃС‚СЂРѕРєРµ РІСЃРµ РІС…РѕР¶РґРµРЅРёСЏ С‡Р»РѕРІР° Fuck РЅР° СЃР»РѕРІ Censored"
  */
 public class Work_2 {
     public static void main (String[] args){
         Scanner sc = new Scanner(System.in);
         String source;
         String result;
-        System.out.println("Введите строку для поиска");
+        System.out.println("Р’РІРµРґРёС‚Рµ СЃС‚СЂРѕРєСѓ РґР»СЏ РїСЂРѕРІРµСЂРєРё");
         source = sc.nextLine();
         result = source.replaceAll("Fuck", "Censored");
         System.out.println(result);

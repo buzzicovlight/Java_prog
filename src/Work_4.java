@@ -1,8 +1,7 @@
 import java.util.Scanner;
-
-/**
- * Пользователь вводит расстояние до места назанчения N и время, за кторое нужно доехать T. Вычислить скоровсть,
- * с которой нужно ехать.
+/*
+ * РџРѕР»СЊР·РѕРІР°С‚РµР»СЊ РІРІРѕРґРёС‚ СЂР°СЃСЃС‚РѕСЏРЅРёРµ РґРѕ РјРµСЃС‚Р° РЅР°Р·Р°РЅС‡РµРЅРёСЏ N Рё РІСЂРµРјСЏ, Р·Р° РєС‚РѕСЂРѕРµ РЅСѓР¶РЅРѕ РґРѕРµС…Р°С‚СЊ T. Р’С‹С‡РёСЃР»РёС‚СЊ СЃРєРѕСЂРѕРІСЃС‚СЊ,
+ * СЃ РєРѕС‚РѕСЂРѕР№ РЅСѓР¶РЅРѕ РµС…Р°С‚СЊ.
  */
 public class Work_4 {
     public static void main (String[] args){
@@ -11,10 +10,10 @@ public class Work_4 {
         float time ;
         float speed;
         String temp;
-        System.out.println("Ввевдите расстояние ");
+        System.out.println("Р’РІРµРІРґРёС‚Рµ СЂР°СЃСЃС‚РѕСЏРЅРёРµ ");
         temp = sc.nextLine();
         destination = Float.parseFloat(temp);
-        System.out.println("Ввевдите время ");
+        System.out.println("Р’РІРµРІРґРёС‚Рµ РІСЂРµРјСЏ ");
         temp = sc.nextLine();
         time = Float.parseFloat(temp);
         speed = destination/time;

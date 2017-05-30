@@ -1,23 +1,40 @@
 import java.util.Scanner;
 /*
-Напишите метод, который будет увеличивать заданный элемент массива на 10%
- */
-public class Work_1 {
+РќР°РїРёС€РёС‚Рµ РјРµС‚РѕРґ, РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ СѓРІРµР»РёС‡РёРІР°С‚СЊ Р·Р°РґР°РЅРЅС‹Р№ СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР° РЅР° 10%
+ */public class Work_1 {
     public static void main(String[] args){
-        float [] arr;
-        System.out.println("Введите длину массива");
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();          // считывание строки
-        int length = Integer.parseInt(s);  // преобразование в интежер из строки
+        float [] arr = null;
+        int length = 0;
+        String temp = null;
+        boolean isNumber = false;
+        while(!isNumber) {       // РїСЂРѕРІРµСЂРєР° РЅР° РїСЂР°РІРёР»СЊРЅРѕСЃС‚СЊ С‡РёСЃР»РѕРІРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ
+            System.out.print("Р’РІРµРґРёС‚Рµ РІРµР»РёС‡РёРЅСѓ РјР°СЃСЃРёРІР° ");
+            temp = sc.nextLine();
+            try {
+                length = Integer.parseInt(temp);,
+                isNumber = true;
+            } catch (NumberFormatException e) {
+                System.out.println("Р’С‹ РІРІРµР»Рё РЅРµ С‡РёСЃР»Рѕ");
+            }
+        }
         arr = new float [length];
         for (int i = 0; i < arr.length ; i++) {
-            System.out.printf("Введите %d - элемент ", (i+1));
-            s = sc.nextLine();
-            arr [i] = Float.parseFloat(s);
+            isNumber = false;   // РѕР±РЅСѓР»РµРЅРёРµ Р·РЅР°С‡РµРЅРёСЏ Р»РѕРіРёС‡РµСЃРєРѕР№ РїРµСЂРµРјРµРЅРЅРѕР№ РґР»СЏ РїСЂРѕРІРµСЂРєРё РїСЂР°РІРёР»СЊРЅРѕСЃС‚Рё РІРІРѕРґР° С‡РёСЃР»РѕРІРѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ
+            while (!isNumber) {
+                System.out.printf("Р’РІРµРґРёС‚Рµ %d - РјР°СЃСЃРёРІР° ", (i+1));
+                temp = sc.nextLine();
+                try {
+                    arr[i] = Float.parseFloat(temp);
+                    isNumber = true;
+                } catch (NumberFormatException e) {
+                    System.out.printf("Р’С‹ РЅРµ РІРІРµР»Рё %d СЌР»РµРјРµРЅС‚ РјР°СЃСЃРёРІР° ", (i+1));
+                }
+            }
         }
         float [] resultarr;
         resultarr = new float[length];
-        System.out.println("Массив,увеличеннный на 10 процентов \n");
+        System.out.println("РњР°СЃСЃРёРІ,СѓРІРµР»РёС‡РµРЅРЅС‹Р№ РЅР° 10 РїСЂРѕС†РµРЅС‚РѕРІ \n");
         for (int i = 0; i < arr.length ; i++) {
             resultarr[i] = 0.1f*arr[i]+arr[i];
             System.out.println(resultarr[i]);
