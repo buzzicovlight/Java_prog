@@ -1,3 +1,5 @@
+package Control_Work;
+
 import java.util.Scanner;
 /*
  * Напишите метод, заменяющий в строке все вхождения члова Fuck на слов Censored"

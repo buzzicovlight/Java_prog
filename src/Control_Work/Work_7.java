@@ -1,3 +1,5 @@
+package Control_Work;
+
 import java.util.Scanner;
 /*
 *  Cоздать класс Уточка.
