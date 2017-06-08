@@ -1,8 +1,6 @@
 package Control_Work;
-
 import java.util.Scanner;
 /*
-<<<<<<< HEAD
 Напишите метод, который будет увеличивать заданный элемент массива на 10%
  */public class Work_1 {
     public static void main(String[] args){

@@ -1,3 +1,5 @@
+package Stuff;
+
 public class App2 {
     public static void main(String[] args){
         if(1<2){
@@ -31,12 +33,12 @@ public class App2 {
         do{
             System.out.println(k);
             k--;
-        }while(k>0); // в условном операторе используется только false или true
+        }while(k>0); // пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ false пїЅпїЅпїЅ true
         int l = 0 ;
         /*while(true){
             System.out.println(l);
-            //break;    // обрыв итерации
-            //continue; // прерывание
+            //break;    // пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+            //continue; // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
          }
         /*b = true||false;
         b = false&&false;

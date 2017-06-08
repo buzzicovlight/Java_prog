@@ -45,14 +45,14 @@ public class Lesson_9 {
             System.err.println("Было введено число 12");
         }catch(ArithmeticException e){
                 System.err.println("Деление на 0");
-        }finally{  // выполнение действия в любом случае независимо от того, есть ли ошибка или нет
+        }finally{                   // выполнение действия в любом случае независимо от того, есть ли ошибка или нет
                 System.err.println("Вычесление завершено");
                 sc.close();
         }
         /*try{
             int i = 24/0;
             throw new IllegalArgumentException();
-        }catch (ArithmeticException | IllegalArgumentException e){
+        }catch (ArithmeticException || IllegalArgumentException e){  || - ленивая форма записи (или) & - ленивая форма и
             System.out.println("Произошла ошибка");  // упрощение записи ошибок
         }*/
         try{
@@ -66,7 +66,7 @@ public class Lesson_9 {
         d2.util.Point p2  = new d2.util.Point();
     }
 }
-/* Создание класа проверяющего на неввод числа 12*/
+/* Создание класа проверяющего на не ввод числа 12*/
 class InvalidNumber12Exaption extends ArithmeticException{ // класс исключений.
     public InvalidNumber12Exaption(String message){
         super(message);

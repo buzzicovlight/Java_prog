@@ -8,7 +8,7 @@ public class Work_3 {
     public static void  main (String[] args ){
         int [] resArr;
         Scanner sc = new Scanner(System.in);
-        System.out.println("Ввведите число для преобразования \n");
+        System.out.println("Введите число для преобразования \n");
         String s = sc.nextLine();
         resArr = new int[s.length()];
         for ( int i = 0; i < s.length(); i++){
