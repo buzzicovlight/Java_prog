@@ -4,5 +4,6 @@ package l0806;
 * Все классы, реализующие этот интерфейс, должен иметь цену
 */
 public interface Priceable {
+
     float getPrice();
 }

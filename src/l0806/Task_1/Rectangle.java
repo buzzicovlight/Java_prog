@@ -6,8 +6,8 @@ class Rectangle extends GeometricFigure{
 
     @Override
     void getInfo(){
-        Scanner sc = new Scanner();
-        System.out.println();
+
+        Scanner sc = new Scanner(System.in);
         System.out.printf("Начальная координата x = ");
         System.out.printf("Начальная координата y = ");
         System.out.printf("Ширина = ");

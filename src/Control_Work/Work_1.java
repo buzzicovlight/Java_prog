@@ -5,6 +5,7 @@ import java.util.Scanner;
  */public class Work_1 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+        int a;
         float [] arr = null;
         int length = 0;
         String temp = null;
@@ -37,4 +38,5 @@ import java.util.Scanner;
         resultarr = new float[length];
         System.out.println("Массив,увеличенный на 10 процентов \n");
         }
+
     }

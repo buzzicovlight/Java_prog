@@ -4,15 +4,13 @@ package l0806;
  */
 class Box implements Priceable, RightStatus{
     @Override
-    public float getPrice(){
-        return 0.0f;
+    public float getPrice(){ return 0.0f;
     }
     /*
         *Реализация метода ,указывающего на легальность хранения
     */
     @Override
-    public boolean isLegal() {
-        return false;
+    public boolean isLegal() { return false;
     }
     /*
         *Реализация метода, указывающего на сразрешенный срок хранения
